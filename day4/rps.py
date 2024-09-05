@@ -1,5 +1,5 @@
 import random
-import ascii_art
+import day4.ascii_art as ascii_art
 
 #rock = 0
 #paper = 1
