@@ -19,11 +19,16 @@ def find_max():
 
 
 while not at_goal():
-    while front_is_clear():
-        move()
+        while front_is_clear():
+            if at_goal():
+                break
+            else:
+                move()
 
-    while wall_in_front():
-        find_max()
-        jump()        
-        
+        while wall_in_front():
+                find_max()
+                if at_goal():
+                    break
+                else:
+                    jump()
         
