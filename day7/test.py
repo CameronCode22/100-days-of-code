@@ -23,7 +23,8 @@ print(blank_word)
 
 # TODO2 - Ask the user to guess a letter and assign their answer to a variable called guess, make guess lowercase
 completed_flag = False
-
+failed_flag = False
+num_guess = 0
 while not completed_flag:
 
     letter = input("guess a letter").lower()
@@ -36,6 +37,19 @@ while not completed_flag:
             blank_word[i] = letter
             #update blank word
             print(' '.join(blank_word))
-            if chosen_word == blank_word:
+            joined_blank = str(''.join(blank_word))
+            print(joined_blank)
+            num_guess += 1
+            print(num_guess)
+            if chosen_word == joined_blank:
                 completed_flag = True
+            elif num_guess == 10:
+                failed_flag = True
+                
+            
             break
+    if completed_flag == True:
+        print("You won! congratulations")
+    elif failed_flag == True:
+        print("You lost! Try again!")
+
