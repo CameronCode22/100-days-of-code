@@ -22,3 +22,4 @@ prog_dict["bug"] = "a moth in your compuer"
 for key in prog_dict:
     print(key)
     print(prog_dict[key])
+

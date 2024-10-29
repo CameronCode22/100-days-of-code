@@ -8,16 +8,6 @@ student_scores = {
 
 student_grades = {}
 
-# This is the scoring criteria: 
-
-# - Scores 91 - 100: Grade = "Outstanding" 
-
-# - Scores 81 - 90: Grade = "Exceeds Expectations" 
-
-# - Scores 71 - 80: Grade = "Acceptable" 
-
-# - Scores 70 or lower: Grade = "Fail" 
-
 for student, score in student_scores.items():
     if score > 91 and score < 100:
         student_grades[student] = "Outstanding"

@@ -53,8 +53,8 @@ def calculate_love_score(name_one, name_two):
     love_score = str(total_true) + str(total_love)
     print(love_score)
 
-# name_one = input("Enter their first name")
-# name_two = input("Enter their second name")
+name_one = input("Enter their first name")
+name_two = input("Enter their second name")
 
 calculate_love_score("Kanye West", "Kim Kardashian")
 
